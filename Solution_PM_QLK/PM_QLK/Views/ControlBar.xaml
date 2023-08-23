@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="PM_QLK.Views.ControlBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PM_QLK.Views"
+             mc:Ignorable="d" 
+             
+             xmlns:controlbar="clr-namespace:PM_QLK.Views"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             DataContext="{DynamicResource controlbarVM}"
+             Name="controlBar">
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="MouseDown">
+            <i:InvokeCommandAction Command="{Binding MouseDownCommand}" 
+                                   CommandParameter="{Binding ElementName = controlBar}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    
+    <Grid>
+        <materialDesign:ColorZone Mode="PrimaryLight">
+
+            <DockPanel LastChildFill="False">
+                <StackPanel DockPanel.Dock="Right"
+                            Orientation="Horizontal">
+
+
+                    <Button ToolTip="Minimize"
+                            ToolBar.OverflowMode="AsNeeded"
+                            Margin="1"
+                            Background="MediumPurple"
+                            Command="{Binding MinimizeWindowCommand}"
+                            CommandParameter="{Binding ElementName = controlBar}">
+                        <materialDesign:PackIcon Kind="WindowMinimize" />
+                    </Button>
+
+                    <Button ToolBar.OverflowMode="AsNeeded"
+                            ToolTip="Maximize"
+                            Margin="1"
+                            Background="MidnightBlue"
+                            Command="{Binding MaximizeWindowCommand}"
+                            CommandParameter="{Binding ElementName = controlBar}">
+                        <materialDesign:PackIcon Kind="WindowMaximize" />
+                    </Button>
+
+                    <Button ToolBar.OverflowMode="AsNeeded"
+                            ToolTip="Đóng" 
+                            Margin="1"
+                            Background="PaleVioletRed"
+                            Command="{Binding CloseWindowCommand}"
+                            CommandParameter="{Binding ElementName = controlBar}">
+                        <materialDesign:PackIcon Kind="CloseOutline" />
+                    </Button>
+                </StackPanel>
+
+                <ToggleButton DockPanel.Dock="Left" 
+                              Style="{StaticResource MaterialDesignHamburgerToggleButton}">
+
+                </ToggleButton>
+
+                <TextBlock DockPanel.Dock="Left" 
+                           Margin="16,0,0,0" 
+                           VerticalAlignment="Center"
+                           Text="{Binding Tag, ElementName=controlBar}" />
+
+            </DockPanel>
+        </materialDesign:ColorZone>
+
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,12 @@
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\Models.dll
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\Models.pdb
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\obj\Debug\Models.dll
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\obj\Debug\Models.pdb
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\Models.dll.config
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\EntityFramework.dll
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\EntityFramework.xml
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Kteam\PM_QLK\Solution_PM_QLK\Models\obj\Debug\Models.csproj.CopyComplete

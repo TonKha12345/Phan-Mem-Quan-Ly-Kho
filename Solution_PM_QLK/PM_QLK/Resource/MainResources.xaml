@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:PM_QLK.ViewModels">
+    <viewmodel:MainViewModel x:Key="mainVM" ></viewmodel:MainViewModel>
+    <viewmodel:AddUserViewModel x:Key="addUserVM"></viewmodel:AddUserViewModel>
+    <viewmodel:ChangePasswordViewModel x:Key="changePasswordVM"></viewmodel:ChangePasswordViewModel>
+    <viewmodel:CustomerViewModel x:Key="customerVM"></viewmodel:CustomerViewModel>
+    <viewmodel:InputViewModel x:Key="inputVM"></viewmodel:InputViewModel>
+    <viewmodel:LoginViewModel x:Key="loginVM"></viewmodel:LoginViewModel>
+    <viewmodel:ObjectViewModel x:Key="objectVM"></viewmodel:ObjectViewModel>
+    <viewmodel:OutputViewModel x:Key="outputVM"></viewmodel:OutputViewModel>
+    <viewmodel:SuplierViewModel x:Key="suplierVM"></viewmodel:SuplierViewModel>
+    <viewmodel:UnitViewModel x:Key="unitVM"></viewmodel:UnitViewModel>
+    <viewmodel:UserViewModel x:Key="userVM"></viewmodel:UserViewModel>
+    <viewmodel:ControlBarViewModel x:Key="controlbarVM"></viewmodel:ControlBarViewModel>
+</ResourceDictionary>
